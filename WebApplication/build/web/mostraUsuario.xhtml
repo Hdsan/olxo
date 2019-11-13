@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Usuário cadastrado</title>
+    </h:head>
+    <h:body>
+        <h1>Usuário Cadastrado</h1>
+
+        <hr />
+
+            Nome: <h:outputText value="#{UsuarioBean.nome}" /><br/>
+
+            e-Mail: <h:outputLink value="mailto:#{UsuarioBean.email}">
+
+            <h:outputText value="#{UsuarioBean.email}" />
+
+            </h:outputLink><br/>
+
+            Senha: <h:outputText value="#{UsuarioBean.senha}"/><br/>
+            
+            Telefone: <h:outputText value="#{UsuarioBean.telefone}"/><br/>
+            
+            Endereço: <h:outputText value="#{UsuarioBean.endereço}"/><br/>
+
+        <hr/>
+
+        <h:form>
+
+            <h:commandLink action="inicio" value="Início" />
+
+        </h:form>
+    </h:body>
+</html>
+

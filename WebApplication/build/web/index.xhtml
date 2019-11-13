@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h1 align="center" >
+            <h:graphicImage id="image" alt="logo" url="img/logo.png" width="800" height="300" > </h:graphicImage>
+            <div id="divBusca">
+                <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                
+            </div>
+            </h1>
+            <h2 align="center">
+                Seja bem vindo! Este é o melhor serviço de reciclagem do Brasil!<br></br> <br></br>
+                <h:commandButton action="#{UsuarioBean.novo}" value="Novo Usuário"/>
+                <br/>
+                <h:commandButton value="Login"/>
+            </h2>
+        </h:form>
+    </h:body>
+</html>
+
